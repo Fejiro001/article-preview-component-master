@@ -29,46 +29,65 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/output.css" />
     <title>Article preview component</title>
   </head>
 
-  <body>
-    <main>
-      <div role="img" class=""></div>
-      <section>
-        <div>
-          <h1>
+  <body
+    class="bg-light-grayish-blue flex flex-col items-center justify-center min-h-screen font-primary p-6"
+  >
+    <main
+      class="space-y-8 md:space-y-0 rounded-lg bg-white mx-auto container overflow-clip md:flex md:max-w-[46rem]"
+    >
+      <div
+        role="img"
+        class="h-[200px] md:w-[48rem] md:h-auto bg-no-repeat bg-center bg-cover [background-image:url('../assets/images/drawers.webp')]"
+      ></div>
+
+      <section class="px-[2.1rem] gap-14 md:gap-2 flex flex-col pb-6 md:pt-6">
+        <div class="space-y-2">
+          <h1 class="text-dark-grayish-blue font-bold text-base text-pretty">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h1>
 
-          <p>
+          <p class="text-desaturated-blue font-medium text-paragraph text-wrap">
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I've got some simple tips to help
             you make any room feel complete.
           </p>
         </div>
 
-        <div>
-          <div>
-            <img src="./assets/images/avatar-michelle.webp" alt="" />
+        <div class="mt-auto flex gap-4 items-center flex-wrap">
+          <div class="size-10">
+            <img
+              class="size-10 rounded-full"
+              src="./assets/images/avatar-michelle.webp"
+              alt=""
+            />
           </div>
 
-          <p><span>Michelle Appleton</span> 28 Jun 2020</p>
+          <p class="text-[0.813rem]">
+            <span class="block font-bold">Michelle Appleton</span>
+            <span class="font-medium text-grayish-blue">28 Jun 2020</span>
+          </p>
 
-          <div>
-            <div role="tooltip" aria-hidden="true">
+          <div class="ms-auto">
+            <!-- <div role="tooltip" aria-hidden="true">
               <span id="socialModalTitle">Share</span>
-              <ul id="socialLinks">
+              <ul class="flex" id="socialLinks">
                 <li><img src="./assets/images/icon-facebook.svg" alt="" /></li>
                 <li><img src="./assets/images/icon-twitter.svg" alt="" /></li>
                 <li><img src="./assets/images/icon-pinterest.svg" alt="" /></li>
               </ul>
-            </div>
+            </div> -->
 
-            <button aria-label="Share on social media">
+            <button
+              class="flex justify-center items-center bg-light-grayish-blue p-2 h-8 w-8 rounded-full"
+              aria-label="Share on social media"
+            >
               <img
+                class=""
                 src="./assets/images/icon-share.svg"
                 aria-describedby="sharebutton"
                 alt=""
@@ -79,11 +98,12 @@
       </section>
     </main>
 
-    <footer class="attribution">
+    <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
+    </footer> -->
   </body>
 </html>
+
