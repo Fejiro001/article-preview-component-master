@@ -1,8 +1,8 @@
 const shareButton = document.getElementById("share-button");
-let tooltip = document.getElementById("tooltip");
+let popup = document.getElementById("popup");
 
-const openToolTip = () => {
-  tooltip.classList.toggle("show");
+const openPopup = () => {
+  popup.classList.toggle("show");
 };
 
-shareButton.addEventListener("click", openToolTip);
+shareButton.addEventListener("click", openPopup);

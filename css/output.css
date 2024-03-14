@@ -566,7 +566,7 @@ video {
   }
 }
 
-.mobile-tooltip {
+.mobile-popup {
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -587,7 +587,7 @@ video {
 }
 
 @media (min-width: 850px) {
-  .mobile-tooltip {
+  .mobile-popup {
     right: -55px;
     bottom: 6rem;
     width: -moz-fit-content;
@@ -599,7 +599,7 @@ video {
     padding-right: 2rem;
   }
 
-  .mobile-tooltip::after {
+  .mobile-popup::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -838,17 +838,17 @@ video {
 
 .text-desaturated-blue {
   --tw-text-opacity: 1;
-  color: hsl(214 17% 51% / var(--tw-text-opacity));
+  color: hsl(214 17% 35% / var(--tw-text-opacity));
 }
 
 .text-grayish-blue {
   --tw-text-opacity: 1;
-  color: hsl(212 23% 69% / var(--tw-text-opacity));
+  color: hsl(212 23% 35% / var(--tw-text-opacity));
 }
 
-.text-light-grayish-blue {
+.text-white {
   --tw-text-opacity: 1;
-  color: hsl(210 46% 95% / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .\[background-image\:url\(\'\.\.\/assets\/images\/drawers\.webp\'\)\] {
@@ -870,12 +870,12 @@ video {
 }
 
 .show {
-  animation: fadeIn 0.4s ease-in-out;
+  animation: fadeIn 0.25s ease-out;
 }
 
 .hover\:bg-desaturated-blue:hover {
   --tw-bg-opacity: 1;
-  background-color: hsl(214 17% 51% / var(--tw-bg-opacity));
+  background-color: hsl(214 17% 35% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-light-grayish-blue:hover {
@@ -886,6 +886,11 @@ video {
 .hover\:text-dark-grayish-blue:hover {
   --tw-text-opacity: 1;
   color: hsl(217 19% 35% / var(--tw-text-opacity));
+}
+
+.focus\:bg-desaturated-blue:focus {
+  --tw-bg-opacity: 1;
+  background-color: hsl(214 17% 35% / var(--tw-bg-opacity));
 }
 
 .focus\:bg-light-grayish-blue:focus {
@@ -900,10 +905,14 @@ video {
 
 .active\:bg-desaturated-blue:active {
   --tw-bg-opacity: 1;
-  background-color: hsl(214 17% 51% / var(--tw-bg-opacity));
+  background-color: hsl(214 17% 35% / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:fill-light-grayish-blue {
+  fill: hsl(210, 46%, 95%);
+}
+
+.group:focus .group-focus\:fill-light-grayish-blue {
   fill: hsl(210, 46%, 95%);
 }
 

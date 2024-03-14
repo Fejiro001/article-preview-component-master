@@ -76,11 +76,16 @@
             <span class="font-medium text-grayish-blue">28 Jun 2020</span>
           </p>
 
-          <!-- TOOLTIP -->
+          <!-- POPUP -->
           <div class="ms-auto">
-            <div id="tooltip" class="invisible mobile-tooltip" role="tooltip" aria-hidden="false">
+            <div
+              id="popup"
+              class="invisible mobile-popup"
+              role="popup"
+              aria-hidden="false"
+            >
               <span
-                class="text-sm text-grayish-blue uppercase tracking-[0.4em]"
+                class="text-sm text-white uppercase tracking-[0.4em]"
                 id="socialModalTitle"
                 >Share</span
               >
@@ -99,17 +104,12 @@
 
             <button
               id="share-button"
-              class="group hover:bg-desaturated-blue active:bg-desaturated-blue relative z-10 flex justify-center items-center bg-light-grayish-blue p-2 h-8 w-8 rounded-full md:me-4"
+              class="group focus:bg-desaturated-blue hover:bg-desaturated-blue active:bg-desaturated-blue relative z-10 flex justify-center items-center bg-light-grayish-blue p-2 h-8 w-8 rounded-full md:me-4"
               aria-label="Share on social media"
             >
-              <svg
-                aria-describedby="sharebutton"
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="13"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                 <path
-                  class="fill-dark-grayish-blue group-hover:fill-light-grayish-blue group-active:fill-light-grayish-blue"
+                  class="fill-dark-grayish-blue group-focus:fill-light-grayish-blue group-hover:fill-light-grayish-blue group-active:fill-light-grayish-blue"
                   d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
                 />
               </svg>
@@ -122,13 +122,13 @@
     <footer class="mt-4 absolute bottom-0 text-center">
       Challenge by
       <a
-        class="font-bold bg-dark-grayish-blue text-light-grayish-blue hover:text-dark-grayish-blue hover:bg-light-grayish-blue focus:text-dark-grayish-blue focus:bg-light-grayish-blue"
+        class="font-bold bg-dark-grayish-blue text-white hover:text-dark-grayish-blue hover:bg-light-grayish-blue focus:text-dark-grayish-blue focus:bg-light-grayish-blue"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a
-        class="font-bold bg-dark-grayish-blue text-light-grayish-blue hover:text-dark-grayish-blue hover:bg-light-grayish-blue focus:text-dark-grayish-blue focus:bg-light-grayish-blue"
+        class="font-bold bg-dark-grayish-blue text-white hover:text-dark-grayish-blue hover:bg-light-grayish-blue focus:text-dark-grayish-blue focus:bg-light-grayish-blue"
         target="_blank"
         href="https://www.frontendmentor.io/profile/Fejiro001"
         >Fejiro Abere</a
