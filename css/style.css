@@ -3,11 +3,36 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: "Manrope";
-        src: url(../assets/fonts/Manrope-VariableFont_wght.ttf);
-        font-display: swap;
-        font-style: normal;
-        font-weight: 500 700;
+  @font-face {
+    font-family: "Manrope";
+    src: url(../assets/fonts/Manrope-VariableFont_wght.ttf);
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500 700;
+  }
+}
+
+@layer components {
+  .mobile-tooltip {
+    @apply absolute flex flex-wrap right-0 bottom-0 p-7 w-full z-10 rounded-t-none rounded-b-lg gap-4 bg-dark-grayish-blue me-0 items-center;
+  }
+  @media (min-width: 850px) {
+    .mobile-tooltip {
+      @apply rounded-lg right-[-55px] bottom-24 py-4 px-8 w-fit;
     }
+    .mobile-tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+    }
+  }
+}
+
+.show {
+  @apply animate-fadeIn visible;
 }

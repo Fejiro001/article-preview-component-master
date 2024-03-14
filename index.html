@@ -34,36 +34,40 @@
   </head>
 
   <body
-    class="bg-light-grayish-blue flex flex-col items-center justify-center min-h-screen font-primary p-6"
+    class="relative bg-light-grayish-blue flex flex-col items-center justify-center min-h-screen font-primary p-6"
   >
     <main
-      class="space-y-8 sm:space-y-0 rounded-lg bg-white mx-auto container overflow-clip sm:flex sm:max-w-[46rem]"
+      class="relative space-y-8 md:space-y-0 rounded-lg bg-white mx-auto container md:flex md:max-w-[46rem]"
     >
       <div
         role="img"
-        class="h-[200px] sm:w-[48rem] sm:h-auto bg-no-repeat bg-center bg-cover [background-image:url('../assets/images/drawers.webp')]"
+        class="rounded-[0.5rem_0.5rem_0_0] md:rounded-[0.5rem_0_0_0.5rem] h-[200px] md:w-[48rem] md:h-auto bg-no-repeat bg-center bg-cover [background-image:url('../assets/images/drawers.webp')]"
       ></div>
 
-      <section class="px-[2.1rem] gap-14 sm:gap-6 flex flex-col pb-6 sm:py-7">
+      <section
+        class="px-[2.1rem] gap-10 md:gap-6 flex flex-col pb-[1.4rem] md:py-7"
+      >
         <div class="space-y-2">
           <h1 class="text-dark-grayish-blue font-bold text-base text-pretty">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h1>
 
-          <p class="text-desaturated-blue font-medium text-paragraph text-wrap">
+          <p
+            class="text-desaturated-blue font-medium text-paragraph text-pretty"
+          >
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I've got some simple tips to help
             you make any room feel complete.
           </p>
         </div>
 
-        <div class="mt-auto flex gap-4 items-center flex-wrap">
+        <div class="mt-auto flex gap-4 md:items-start items-end flex-wrap">
           <div class="size-10">
             <img
               class="size-10 rounded-full"
               src="./assets/images/avatar-michelle.webp"
-              alt=""
+              alt="Michelle Appleton profile image"
             />
           </div>
 
@@ -72,58 +76,65 @@
             <span class="font-medium text-grayish-blue">28 Jun 2020</span>
           </p>
 
-          <div class="ms-auto relative">
-
-            <!-- <div
-              class="w-32 right-0 flex bg-desaturated-blue"
-              role="tooltip"
-              aria-hidden="true"
-            >
-              <span id="socialModalTitle">Share</span>
-              <ul class="flex" id="socialLinks">
-                <li class="size-5">
+          <!-- TOOLTIP -->
+          <div class="ms-auto">
+            <div id="tooltip" class="invisible mobile-tooltip" role="tooltip" aria-hidden="false">
+              <span
+                class="text-sm text-grayish-blue uppercase tracking-[0.4em]"
+                id="socialModalTitle"
+                >Share</span
+              >
+              <ul class="flex flex-wrap gap-4 items-center" id="socialLinks">
+                <li aria-label="facebook link" class="size-5">
                   <img src="./assets/images/icon-facebook.svg" alt="" />
                 </li>
-                <li class="size-5">
+                <li aria-label="twitter link" class="w-5 h-[16px]">
                   <img src="./assets/images/icon-twitter.svg" alt="" />
                 </li>
-                <li class="size-5">
+                <li aria-label="pinterest link" class="size-5">
                   <img src="./assets/images/icon-pinterest.svg" alt="" />
                 </li>
               </ul>
-            </div> -->
+            </div>
 
             <button
-              class="flex justify-center items-center bg-light-grayish-blue p-2 h-8 w-8 rounded-full"
+              id="share-button"
+              class="group hover:bg-desaturated-blue active:bg-desaturated-blue relative z-10 flex justify-center items-center bg-light-grayish-blue p-2 h-8 w-8 rounded-full md:me-4"
               aria-label="Share on social media"
             >
-              <img
-                class=""
-                src="./assets/images/icon-share.svg"
+              <svg
                 aria-describedby="sharebutton"
-                alt=""
-              />
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+              >
+                <path
+                  class="fill-dark-grayish-blue group-hover:fill-light-grayish-blue group-active:fill-light-grayish-blue"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
             </button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="attribution">
+    <footer class="mt-4 absolute bottom-0 text-center">
       Challenge by
       <a
-        class="font-bold bg-dark-grayish-blue text-light-grayish-blue"
+        class="font-bold bg-dark-grayish-blue text-light-grayish-blue hover:text-dark-grayish-blue hover:bg-light-grayish-blue focus:text-dark-grayish-blue focus:bg-light-grayish-blue"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a
-        class="font-bold bg-dark-grayish-blue text-light-grayish-blue"
+        class="font-bold bg-dark-grayish-blue text-light-grayish-blue hover:text-dark-grayish-blue hover:bg-light-grayish-blue focus:text-dark-grayish-blue focus:bg-light-grayish-blue"
         target="_blank"
         href="https://www.frontendmentor.io/profile/Fejiro001"
         >Fejiro Abere</a
       >.
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
